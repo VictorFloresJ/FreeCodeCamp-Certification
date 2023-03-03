@@ -1,0 +1,75 @@
+<!--
+Step 91
+It would be nice if the vertical space between the h2 elements and their associated icons was smaller. The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+
+There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this project, go ahead and use a negative top margin of 25px in the img type selector.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Preload-->
+    <link rel='preload' href='css/normalize.css' as='style'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='preload' href='https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap' crossorigin='crossorigin' as='font'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel='preload' href='css/styles.css' as='style'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Cafe Menu</title>
+</head>
+<body>
+    <div class="menu">
+        <main>
+            <h1 class="text-center text-uppercase">Camper cafe</h1>
+            <p class="text-center text-italic">Est. 2020</p>
+            <hr>
+            <section>
+                <h2 class="text-center">Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+                <article class="drink">
+                    <p class="drink__flavor">French Vanilla</p><p class="drink__price">3.00</p>
+                </article>
+                <article class="drink">
+                    <p class="drink__flavor">Pumpkin Spice</p><p class="drink__price">3.50</p>
+                </article>
+                <article class="drink">
+                    <p class="drink__flavor">HazelInut</p><p class="drink__price">4.00</p>
+                </article>
+                <article class="drink">
+                    <p class="drink__flavor">Mocha</p><p class="drink__price">4.50</p>
+                </article>
+            </section>
+            <section>
+                <h2 class="text-center">Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                <article class="dessert">
+                    <p class="dessert__type">Donut</p><p class="dessert__price">1.50</p>
+                </article>
+                <article class="dessert">
+                    <p class="dessert__type">Donut</p><p class="dessert__price">1.50</p>
+                </article>
+                <article class="dessert">
+                    <p class="dessert__type">Cherry Pie</p><p class="dessert__price">2.75</p>
+                </article>
+                <artice class="dessert">
+                    <p class="dessert__type">Cheesecake</p><p class="dessert__price">3.00</p>
+                </artice>
+                <article class="dessert">
+                    <p class="dessert__type">Cinnamon Roll</p><p class="dessert__price">2.50</p>
+                </article>
+            </section>
+        </main>
+        <hr>
+        <footer class="footer">
+            <p class="text-center"><a href="#" target="_blank">Visit our webpage</a></p>
+            <p class="text-center">123 Free Code Camp Drive</p>
+        </footer>
+    </div>
+</body>
+</html>

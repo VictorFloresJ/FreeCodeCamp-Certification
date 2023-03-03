@@ -1,0 +1,75 @@
+:root {
+    --color-principal: rgb(36, 37, 68);
+    --color-inputs: #495057;
+    --color-white: rgb(255, 255, 255);
+    --color-green: #37af65;
+    --fuente-principal: 'Poppins', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuente-principal);
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+}
+/*Global*/
+h1{font-size: 3rem;}
+p{font-size: 1.8rem;}
+/*Utilities*/
+.text-center{text-align: center;}
+.text-italic{font-style: italic;}
+/*Container*/
+.container {
+    max-width: 70rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+/*Header*/
+
+/*Main*/
+.main{
+    background-color: var(--color-principal);
+    padding: 4rem;
+    border-radius: 1rem;
+}
+/*Labels, inputs, textareas, fieldsets & selectors*/
+.label, .input, .label-secondary, .selector{
+    display: block;
+}
+.input, .selector, .fieldset, .textarea{
+    margin-top: 1.1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.input, .selector, .textarea{
+    border-radius: 0.5rem;
+    color: var(--color-inputs);
+}
+.fieldset {
+    border: none;
+    padding: 0;
+}
+.input-secondary{margin: 0.8rem auto;}
+.textarea{
+    max-width: 100%;
+    height: 10rem;
+}
+/*Button*/
+.button{
+    width: 100%;
+    background-color: var(--color-green);
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--color-white);
+}

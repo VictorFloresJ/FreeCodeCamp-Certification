@@ -1,0 +1,78 @@
+:root {
+    --color-principal: rgb(222, 184, 135);
+    --color-secondary: rgb(123, 63, 0);
+    --color-black: rgb(0, 0, 0);
+    --font-principal: 'Open Sans', sans-serif;
+    --font-headings: 'PT Sans', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+/*Global*/
+h1 {font-size: 4rem;}
+h2 {font-size: 3.5rem;}
+h1, h2 {
+    font-family: var(--font-headings);
+    margin: 2rem auto;
+}
+p {
+    font-size: 2.2rem;
+    font-family: var(--font-principal);
+}
+hr {
+    height: 0.2rem;
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    margin: 1rem 0;
+}
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+a:hover, a:visited {color: var(--color-secondary);}
+a:active {color: var(--color-black);}
+img {
+    display: block;
+    margin: -1rem auto;
+}
+/*Utilities*/
+.text-center{text-align: center;}
+.text-uppercase{text-transform: uppercase;}
+.text-italic{font-style: italic;}
+/*Menu*/
+.menu {
+    width: 70%;
+    max-width: 70rem;
+    background-color: var(--color-principal);
+    margin: 2rem auto;
+    padding: 2rem;
+}
+/*Drink & Dessert*/
+.drink, .dessert{}
+.drink p, .dessert p {
+    display: inline-block;
+    margin: 0.7rem 0;
+}
+.drink__flavor, .dessert__type {
+    width: 75%;
+    text-align: left;
+}
+.drink__price, .dessert__price {
+    width: 25%;
+    text-align: right;
+}
+/*Footer*/
+.footer p {font-size: 1.9rem;}

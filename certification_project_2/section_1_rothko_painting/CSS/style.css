@@ -1,0 +1,60 @@
+:root {}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+/*Global*/
+
+/*Utilities*/
+
+/*Frame*/
+.frame {
+    width: 70rem;
+    padding: 5rem;
+    margin: 2rem auto;
+    border: 5rem solid black;;
+}
+/*Canva*/
+.canva {
+    width: 50rem;
+    height: 60rem;
+    background-color: #4d0f00;
+    overflow: hidden;
+    filter: blur(0.2rem);
+}
+/*One, Two & Three*/
+.one {
+    width: 42.5rem;
+    height: 15rem;
+    background-color: #efb762;
+    margin: 2rem auto;
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+    transform: rotate(-0.6deg);
+}
+.two {
+    width: 47.5rem;
+    height: 20rem;
+    background-color: #8f0401;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 0 3px 3px #8f0401;
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
+}
+.one, .two{filter: blur(0.1px);}
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    filter: blur(0.2rem);
+    box-shadow: 0 0 5px 5px #b20403;
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+}

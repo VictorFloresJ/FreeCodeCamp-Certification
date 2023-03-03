@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Quiz Project">
+    <!--Preload-->
+    <link rel='preload' href='CSS/normalize.css' as='style'>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel='preload' href='CSS/style.css' as='style'>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Accesibility Quiz</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <img id="header__logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo image">
+        <h1 class="header__title">HTML/CSS Quiz</h1>
+        <nav class="header__nav">
+            <a href="#student-info" class="text-uppercase header__nav__link" accesskey="i">Info</a>
+            <a href="#html-questions" class="text-uppercase header__nav__link" accesskey="h">HTML</a>
+            <a href="#css-questions" class="text-uppercase header__nav__link" accesskey="c">CSS</a>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="container">
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" class="form" method="post">
+            <fieldset class="form__fieldset">
+                <h2 class="form__fieldset-heading" id="student-info">Student Info</h2>
+                <div class="form__fieldset-field">
+                    <label for="name" class="form__fieldset-field__label">Name: </label>
+                    <input type="text" name="name" id="name" class="form__fieldset-field__input">
+                </div>
+                <div class="form__fieldset-field">
+                    <label for="email" class="form__fieldset-field__label">Email: </label>
+                    <input type="email" name="email" id="email" class="form__fieldset-field__input">
+                </div>
+                <div class="form__fieldset-field">
+                    <label for="date-of-birth" class="form__fieldset-field__label">D.O.B.: </label>
+                    <input type="date" name="date-of-birth" id="date-of-birth" class="form__fieldset-field__input">
+                </div>
+            </fieldset><!--.form__fieldset-->
+
+            <fieldset class="form__fieldset">
+                <h2 class="form__fieldset-heading" id="html-questions">HTML</h2>
+                <div class="question">
+                    <p class="question__number">1</p>
+                    <p class="question__description">The legend element represents a caption for the content of its parent fieldset element</p>
+                    <label for="question1-a1" class="question__label">
+                        <input type="radio" name="question1-a" id="question1-a1" value="true"> True
+                    </label>
+                    <label for="question1-a2">
+                        <input type="radio" name="question1-a" id="question1-a2" value="false"> False
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="question__number">2</p>
+                    <p class="question__description">A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+                    <label for="question2-a1" class="question__label">
+                        <input type="radio" name="question2-a" id="question2-a1" value="true"> True
+                    </label>
+                    <label for="question2-a2">
+                        <input type="radio" name="question2-a" id="question2-a2" value="false"> False
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <h2 class="form__fieldset-heading" id="css-questions">CSS</h2>
+                <div class="question">
+                    <label for="occupation" class="question__occupation">Are you a frontend developer?</label>
+                    <select name="question__occupation" id="occupation">
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="questions-from-user" class="questions-from-user">Do you have any questions: </label>
+                    <textarea name="user-questions" id="questions-from-user" cols="30" rows="10" placeholder="Who is flexbox. . ."></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="form__submit">Submit</button>
+        </form>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <address class="address">
+            <p class="footer__paragraph"><a href="">freeCodeCamp</a></p>
+            <p class="footer__paragraph">San Francisco</p>
+            <p class="footer__paragraph">California</p>
+            <p class="footer__paragraph">USA</p>
+        </address>
+    </footer>
+</body>
+</html>

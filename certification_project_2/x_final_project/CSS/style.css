@@ -1,0 +1,76 @@
+:root {
+    --font-principal: 'Segoe UI', sans-serif;
+    --color-font: #333;
+    --color-principal: #ffffff;
+    --color-secondary: #eeeeee;
+    --color-blue: rgb(0, 0, 255);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+* {box-sizing: inherit}
+body {font-size: 1.6rem;}
+/* ---------------------------- GLOBAL ----------------------------*/
+body{
+    font-family: var(--font-principal);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-font);
+}
+img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+h1{font-size: 4rem;}
+h2{font-size: 1.9rem;}
+a{color: var(--color-blue);}
+/* ---------------------------- UTILITIES ----------------------------*/
+.text-center{text-align: center;}
+.text-bold{font-weight: 700;}
+.text-italic{font-style: italic;}
+/* ---------------------------- CONTAINER ---------------------------- */
+.container {
+    background-color: var(--color-secondary);
+    width: 99%;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+/* ---------------------------- HEADER ---------------------------- */
+.header {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+/* ---------------------------- MAIN ---------------------------- */
+.main{
+    width: 98%;
+    margin: 0 auto;
+}
+/* ---------------------------- MAIN-IMAGE ---------------------------- */
+.container__main__image{
+    width: 100%;
+    background-color: var(--color-principal);
+}
+.main__image{
+    width: 45%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.main__image-caption{
+    width: 95%;
+    margin: 0 auto;
+}
+/* ---------------------------- MAIN-TIME-LINE ---------------------------- */
+.container__time-line{
+    width: 38%;
+    margin: 0 auto;
+    padding: 5rem 5rem 0 5rem;
+}
+.time-line{}
+.time-line__element:last-of-type{list-style: none;}
+.time-line__element{margin-bottom: 2.8rem;}
+.time-line__element:first-of-type{margin-top: 5rem;}
+.time-line__element-paragraph{line-height: 1.6;}
+/* ---------------------------- FOOTER ---------------------------- */
+.footer{padding: 3rem;}
+.footer__text{font-size: 1.9rem;}

@@ -1,0 +1,136 @@
+:root {
+    --font-principal: Helvetica, sans-serif;
+    --color-background: #f5f6f7;
+    --color-logo: #0a0a23;
+    --color-principal: #1b1b32;
+    --color-links: #dfdfe2;
+    --color-headings: #f1be32;
+    --color-borders: #3b3b4f;
+    --color-button: #d0d0d5;
+}
+html{font-size: 62.5%;}
+*{box-sizing: border-box;}
+body{font-size: 1.6rem;}
+/* ------------------- GLOBAL ------------------- */
+a{text-decoration: none;}
+body{font-family: var(--font-principal);}
+img {width: 100%;}
+fieldset{border: none;}
+h2{font-size: 2.8rem;}
+textarea{
+    max-width: 40rem;
+    max-height: 15rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {scroll-behavior: smooth;}
+}
+/* UTILITIES*/
+.text-uppercase{text-transform: uppercase;}
+/* ------------------- HEADER ------------------- */
+.header {
+    display: flex;
+    background-color: var(--color-principal);
+    padding: 0.4rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+#header__logo {
+    background-color: var(--color-logo);
+    width: 20rem;
+    height: 4rem;
+}
+.header__title {
+    font-size: 2rem;
+    color: var(--color-headings);
+}
+.header__nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .header__nav {
+        width: 15%;
+        margin-right: 4rem;
+    }    
+}
+.header__nav a {
+    color: var(--color-links);
+    padding: 0.3rem;
+}
+.header__nav a:hover {
+    background-color: var(--color-links);
+    color: var(--color-principal);
+}
+/* ------------------- MAIN ------------------- */
+.container {
+    padding-top: 10rem;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.form{padding: 0 3rem 3rem 3rem;}
+.form__fieldset{margin-bottom: 3rem;}
+.form__fieldset-field{
+    display: block;
+    padding: 1rem 0;
+}
+.form__fieldset-field__label{
+    width: 10%;
+    min-width: 5rem;
+    display: inline-block;
+    text-align: right;
+}
+.form__fieldset-field__input{
+    width: 40%;
+    text-align: left;
+}
+.form__fieldset-heading{border-bottom: 0.5rem solid var(--color-links);}
+/* ------------------- MAIN - QUESTIONS ------------------- */
+.question {padding: 0.5rem 0 0.5rem 2rem;}
+.question__number{font-size: 2rem;}
+.question__number::before {content: "Question #";}
+.question__description{font-size: 1.5rem;}
+.question__label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.question__occupation, .questions-from-user{
+    display: block;
+    margin-bottom: 1rem;
+}
+#occupation { /* Select tag */
+    margin-bottom: 2rem;
+    background-color: var(--color-button);
+    border-color: var(--color-borders);
+}
+#occupation:hover{cursor: pointer;}
+/* ------------------- MAIN - BUTTON ------------------- */
+.form__submit {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border: 0.2rem solid var(--color-borders);
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: var(--color-button);
+}
+/* ------------------- FOOTER ------------------- */
+.footer {
+    background-color: var(--color-principal);
+    margin: 0;
+    padding: 2rem;
+}
+.footer__paragraph{
+    margin: 0;
+    color: var(--color-links);
+    margin-bottom: .5rem;
+}
+.footer__paragraph a {color: var(--color-links);}
+.address{
+    width: max-content;
+    margin: 0 auto;
+}

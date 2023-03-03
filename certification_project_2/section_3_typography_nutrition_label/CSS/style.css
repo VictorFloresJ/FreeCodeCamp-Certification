@@ -1,0 +1,67 @@
+:root {
+    --font-principal: 'Open Sans', sans-serif;
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-gray: #888989;
+}
+html {font-size: 62.5%;}
+* {box-sizing: border-box;}
+body {font-size: 1.6rem;}
+/*Global*/
+body{font-family: var(--font-principal);}
+h1{
+    font-size: 3.9rem;
+    letter-spacing: 0.015rem;
+    text-align: center;
+}
+h1, p {margin: 0.1rem;}
+/*Utilities*/
+.text-center{text-align: center;}
+.text-right{float: right;}
+.text-right-no-float{text-align: right;}
+.text-bold{font-weight: 800;}
+.text-indent{margin-left: 2rem;}
+.text-indent-double{margin-left: 4rem;}
+/*Label*/
+.label {
+    width: 100%;
+    max-width: 33rem;
+    padding: 0.6rem;
+    border: 0.2rem solid var(--color-black);
+    margin: 2rem auto;
+    overflow: hidden;
+}
+/*Dividers*/
+.divider {
+    background-color: var(--color-gray);
+    height: 0.1rem;
+    margin: 0.5rem auto;
+}
+.divider-medium{
+    height: 0.5rem;
+    background-color: var(--color-black);
+}
+.divider-large{
+    height: 1.2rem;
+    background-color: var(--color-black);
+}
+.divider-medium, .divider-large {margin: 0.4rem auto;}
+/*Calories info*/
+.calories {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.calories__number {
+    font-size: 3.9rem;
+    margin: -0.7rem 0;
+}
+/*Daily-value*/
+.daily-value p:not(.text-right-no-float, .text-indent, .text-indent-double){
+    border-bottom: 0.1rem solid var(--color-gray);
+}
+.daily-value p {margin-top: 0.5rem;}
+/*Note*/
+.note {
+    font-size: 1.2rem;
+    text-align: justify;
+}

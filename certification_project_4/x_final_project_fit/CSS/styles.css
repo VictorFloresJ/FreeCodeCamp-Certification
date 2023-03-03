@@ -1,0 +1,188 @@
+:root {
+    --color-buttons: #f1c40f;
+    --color-icons: darkorange;
+    --font-principal: 'Lato', sans-serif;
+    --color-gray: #ddd;
+    /*<iframe width="2543" height="1166" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>*/
+}
+*, *::before, *::after { 
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* --- Global --- */
+body { 
+    font-family: var(--font-principal); 
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img { 
+    width: 100%;
+    max-width: 30rem; 
+}
+iframe {
+    width: 100%;
+}
+ol { list-style: none; }
+li { text-align: center; }
+/* --- Header section --- */
+#header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+#nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    /* border: 1px solid black; */
+}
+@media only screen and (max-width: 874px) {
+    #header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 560px) {
+    #header {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    #nav-bar {
+        grid-template-columns: auto;
+        row-gap: 1rem;
+    }
+}
+#nav-bar a { text-align: center; }
+/* --- Main section --- */
+.main {
+    margin: 7rem auto 3rem auto;
+    width: 100%;
+    max-width: 90rem;
+}
+@media only screen and (max-width: 560px) {
+    .main { margin-top: 15rem; }
+}
+#form {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+    /* border: 1px solid black; */
+}
+.hero-title { text-align: center; }
+#email { 
+    width: 30%; 
+    margin: 0 auto;
+}
+.button {
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--font-principal);
+    background-color: var(--color-buttons);
+    text-transform: uppercase;
+    border: none;
+}
+.button-bolder { font-weight: 800;}
+/* --- Features section --- */
+.features {
+    display: grid;
+    row-gap: 2rem;
+    /* border: 1px solid black; */
+    margin-bottom: 3rem;
+}
+.feature {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    padding: 2rem;
+    /* border: 1px solid black; */
+}
+.feature-icon { color: var(--color-icons); }
+@media only screen and (max-width: 720px) {
+    .feature {
+        grid-template-columns: auto;
+    }
+    .feature-icon { display: none; }
+}
+/* --- Video --- */
+.video { 
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: 0 auto 3rem auto;
+}
+@media only screen and (max-width: 720px) {
+    .video { width: 80%;}
+}
+/* --- Pricing section --- */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    /* border: 1px solid black; */
+}
+@media only screen and (max-width: 900px) {
+    .pricing {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .pricing {
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+    .pricing-product {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+.pricing-product {
+    display: grid;
+    row-gap: 2rem;
+    border: 1px solid black;
+}
+.level {
+    background-color: var(--color-gray);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price::before { content: '$'}
+.price { text-align: center;}
+.pricing-product ol {
+    display: grid;
+    row-gap: 2rem;
+}
+/* --- Footer section --- */
+.footer {
+    background-color: var(--color-gray);
+    padding: 2rem;
+    display: grid;
+    row-gap: 1rem;
+    justify-content: end;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 945px) {
+    .footer { width: 90%; }
+}
+.footer__links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__links a { text-align: center; }

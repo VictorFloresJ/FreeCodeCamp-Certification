@@ -1,0 +1,53 @@
+:root {
+    --color-red: rgb(255, 0, 0);
+    --color-green: rgb(0, 127, 0);
+    --color-blue: rgb(0, 0, 255);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+/*Global*/
+
+/*Utilities*/
+.text-center{text-align: center;}
+.container {padding: 2rem;}
+/*Markers*/
+.marker {
+    height: 2.5rem;
+    width: 20rem;
+    margin: 2rem auto;
+}
+.marker-red{
+    background: linear-gradient(90deg, rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 2rem 0 rgba(83, 14, 14, 0.8);
+}
+.marker-green{
+    background: linear-gradient(90deg, #55680D, #71F53E, #116C31);
+    box-shadow: 0 0 2rem 0 #3B7E20CC;
+}
+.marker-blue{
+    background: linear-gradient(90deg, hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 2rem 0 hsla(225, 59%, 31%, 0.8);
+}
+/*Sleeves*/
+.sleeve {
+    height: 2.5rem;
+    width: 11rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 1rem double rgba(0, 0, 0, 0.75);
+}
+/*Cape*/
+.cap {
+    height: 2.5rem;
+    width: 6rem;
+}
+.cap, .sleeve {display: inline-block;}
